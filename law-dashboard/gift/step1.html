@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom css -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+    <link href="../fonts.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>RJ Thomas Solicitor</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-bg navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../images/rj-logo.png" alt="logo" /></a>
+          <a href="#" class="navbar-user ms-auto order-lg-2">J</a>
+          <button class="navbar-toggler p-0 ms-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Will</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Power of Attorney</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="page-content">
+        <div class="container" style="max-width: 1230px;">
+          <div class="pt-lg-4 pt-3 pb-2 mb-md-4 mb-2">
+            <div class="row mt-md-4 align-items-end">
+              <div class="col-md-7 d-sm-flex align-items-center mb-md-0 mb-3">
+                  <button onclick="history.back()" class="btn btn-back me-lg-4 me-3 mb-sm-0 mb-2 btn-reset"><i class="fa-solid fa-arrow-left"></i></button>
+                  <h4 class="h3 mb-0">Would you like to leave a gift? 🎁</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-lg mb-50">
+            <div class="row">
+              <div class="col-lg-6 col-xl-6 col-md-6">
+                <h4 class="mb-4">Gifts are a special part of your Will. You can gift anything you own, whether it's a possession or an amount of money.</h4>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-lg-6 col-xl-5 col-md-6">
+                <div class="radio-btns mb-4 d-flex align-items-center">
+                  <label>
+                    <input type="radio" name="anotherName" required data-active="group-other" />
+                    <span class="btn btn-md btn-white">Yes</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="anotherName" required data-inactive="group-other" />
+                    <span class="btn btn-md btn-white">No</span>
+                  </label>
+                </div>
+
+                <div class="mb-4 pt-2" id="group-other" style="display: none;">
+                  <h4 class="mb-3">What would you like to gift?</h4>
+
+                  <div class="card-info mb-3 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6>Something</h6>
+                      <p>Camelia</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <button type="button" class="btn btn-xs mb-2 btn-white">Edit</button>
+                      <button type="button" class="btn btn-xs btn-remove btn-white">Remove</button>
+                    </div>
+                  </div>
+                  <!--  -->
+
+                  <button type="button" data-popup="modal-gift" class="btn modal-btn btn-add w-100 btn-white">+ Add a gift</button>
+                </div>
+                
+                <div class="mb-4">
+                  <a href="#" class="btn btn-md btn-blue">Next <i class="fa-solid ms-3 fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>  
+          </div>
+      </main>
+      <div id="modal-gift" class="sidebarModal-outer">
+        <div class="sidebarModal-overlay"></div>
+        <div class="sidebarModal d-flex flex-column">
+          <div class="sidebarModal-header d-flex align-items-center justify-content-between">
+            <h5 class="mb-0">What type of gift is this?</h5>
+            <button data-popup="modal-gift" class="btn modal-btn p-0"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="sidebarModal-body py-3 flex-grow-1 overflow-auto">
+            <form action="" class="form-validate">
+              <div class="row mb-4 gx-2 radio-btns radio-btns-sm">
+                <div class="col-6">
+                  <label>
+                    <input type="radio" name="identifying-information" checked data-inactive="some-cash" data-active="possession" />
+                    <span class="btn btn-md d-flex align-items-center justify-content-center btn-white">A possession</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label>
+                    <input type="radio" name="identifying-information" data-inactive="possession" data-active="some-cash" />
+                    <span class="btn btn-md d-flex align-items-center justify-content-center btn-white">Some Cash</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div id="possession" style="display: block;">
+                  <div class="mb-4">
+                    <h4 class="mb-2">Describe your gift</h4>
+                    <input type="text" placeholder="record collection" required class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Who are you leaving this to?</h4>
+                    <div class="card-info mb-3 d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6>Camelia Daniels</h6>
+                        <p>camelia@domain.com</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <button type="button" class="btn btn-xs mb-2 btn-select btn-white">Select</button>
+                        <button type="button" class="btn btn-xs btn-white">Edit</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="card-info mb-3 d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6>Camelia Daniels</h6>
+                        <p>camelia@domain.com</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <button type="button" class="btn btn-xs mb-2 btn-select btn-white">Select</button>
+                        <button type="button" class="btn btn-xs btn-white">Edit</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <button type="button" data-popup="modal-person" class="btn modal-btn btn-add w-100 btn-white">+ Add a person</button>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Charities and Not-for-Profits</h4>
+                    <label class="card-charity-label">
+                      <input type="checkbox" checked hidden name="charity" />
+                      <div class="card-charity">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pe-3">
+                            <img src="../images/card-logo.png" alt="card-logo" />
+                          </div>
+                          <div class="card-check mb-0"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                        <h4>Australian Committee For UNICEF Limited</h4>
+                        <p>L 4 33 Saunders St, Pyrmont 2009 NSW</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Notes for charity</h4>
+                    <textarea rows="6" placeholder="optional" class="form-control"></textarea>
+                  </div>
+                </div>
+
+                <div id="some-cash" style="display: none;">
+                  <div class="mb-4">
+                    <h4 class="mb-2">How much money are you giving?</h4>
+                    <div class="input-group">
+                      <span class="input-group-text ps-4">$</span>
+                      <input type="text" class="ps-0 form-control" />
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Who are you leaving this to?</h4>
+                    <div class="card-info mb-3 d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6>Camelia Daniels</h6>
+                        <p>camelia@domain.com</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <button type="button" class="btn btn-xs mb-2 btn-select btn-white">Select</button>
+                        <button type="button" class="btn btn-xs btn-white">Edit</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="card-info mb-3 d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6>Camelia Daniels</h6>
+                        <p>camelia@domain.com</p>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <button type="button" class="btn btn-xs mb-2 btn-select btn-white">Select</button>
+                        <button type="button" class="btn btn-xs btn-white">Edit</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <button type="button" data-popup="modal-person" class="btn modal-btn btn-add w-100 btn-white">+ Add a person</button>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Charities and Not-for-Profits</h4>
+                    <label class="card-charity-label">
+                      <input type="checkbox" checked hidden name="charity" />
+                      <div class="card-charity">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="pe-3">
+                            <img src="../images/card-logo.png" alt="card-logo" />
+                          </div>
+                          <div class="card-check mb-0"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                        <h4><small>Australian Committee For UNICEF Limited</small></h4>
+                        <p>L 4 33 Saunders St, Pyrmont 2009 NSW</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="mb-2">Notes for charity</h4>
+                    <textarea rows="6" placeholder="optional" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <button type="submit" class="btn btn-md btn-blue">Save Gift</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="modal-person" class="sidebarModal-outer">
+        <div class="sidebarModal-overlay"></div>
+        <div class="sidebarModal d-flex flex-column">
+          <div class="sidebarModal-header d-flex align-items-center justify-content-between">
+            <h5 class="mb-0">Adding a new person</h5>
+            <button data-popup="modal-person" class="btn modal-btn p-0"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+
+          <div class="sidebarModal-body flex-grow-1 overflow-auto">
+            <form action="" class="form-validate">
+              <div class="mb-4">
+                <h4 class="mb-2">Full Name</h4>
+
+                <input type="text" placeholder="Their full name" required class="form-control" />
+              </div>
+
+              <div class="mb-4">
+                <h4 class="mb-3">Identifying Information</h4>
+
+                <div class="row gx-2 radio-btns">
+                  <div class="col-4">
+                    <label>
+                      <input type="radio" name="identifying-information" required data-inactive-multiple="['birth-field', 'address-field']" data-active="email-field" />
+                      <span class="btn btn-md d-flex align-items-center justify-content-center btn-white">Email</span>
+                    </label>
+                  </div>
+                  <div class="col-4">
+                    <label>
+                      <input type="radio" name="identifying-information" data-inactive-multiple="['email-field', 'address-field']" required data-active="birth-field" />
+                      <span class="btn btn-md d-flex align-items-center justify-content-center btn-white">Date of Birth</span>
+                    </label>
+                  </div>
+                  <div class="col-4">
+                    <label>
+                      <input type="radio" name="identifying-information" data-inactive-multiple="['email-field', 'birth-field']" required data-active="address-field" />
+                      <span class="btn btn-md d-flex align-items-center justify-content-center btn-white">Address</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div id="email-field" style="display: none;">
+                  <h4 class="mb-3">Email Address</h4>
+                  <input type="email" placeholder="e.g. person@example.com" class="form-control" />
+                </div>
+
+                <div id="birth-field" style="display: none;">
+                  <h4 class="mb-3">Date of Birth</h4>
+                  <div class="row gx-2">
+                    <div class="col-4 mb-2">
+                      <input type="text" placeholder="DD" required class="form-control" />
+                    </div>
+                    <div class="col-4 mb-2">
+                      <input type="text" placeholder="MM" required class="form-control" />
+                    </div>
+                    <div class="col-4 mb-2">
+                      <input type="text" placeholder="YYYY" required class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <div id="address-field" style="display: none;">
+                  <h4 class="mb-3">Address</h4>
+                  <div class="row gx-2">
+                    <div class="col-12 mb-2">
+                      <input type="text" placeholder="Street Address" required class="form-control" />
+                    </div>
+                    <div class="col-12 mb-2">
+                      <input type="text" placeholder="Suburb" required class="form-control" />
+                    </div>
+                    <div class="col-6 mb-2">
+                      <!-- <input type="text" placeholder="State" required class="form-control" /> -->
+                      <select class="form-control form-select" required>
+                        <option value="">State</option>
+                        <option value="1">NSW</option>
+                      </select>
+                    </div>
+                    <div class="col-6 mb-2">
+                      <input type="text" placeholder="Pincode" required class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="mb-3">Is this person over 18?</h4>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="person-age" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Under 18</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="person-age" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Over 18</label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <button type="submit" class="btn btn-md btn-blue">Save Person</button>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="chat"><img src="../images/chat.png" alt="chat" /></a>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>

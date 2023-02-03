@@ -1,0 +1,126 @@
+@media screen and (min-width: 1441px){
+	.container-fluid{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.container-fluid{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.navbar{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-bg{
+		background: linear-gradient(0deg, rgba(41, 176, 199, 0.1), rgba(41, 176, 199, 0.1)), #FFFFFF;
+	}
+
+	.navbar-brand img {
+	    max-width: 150px;
+	}
+
+	h1{
+		margin-bottom: 0.25em
+	}
+
+	.chat{
+		right: 10px;
+		bottom: 28px;
+	}
+
+	.chat img{
+		max-width: 85px
+	}
+}
+
+@media screen and (max-width: 991px){
+	.navbar-nav > li{
+		margin-left: 0;
+		text-align: center
+	}
+
+	.navbar-nav > li a{
+		font-size: 18px
+	}
+
+	.card-dashboard .card-body {
+	    padding: 18px 20px;
+	}
+
+	.scrollSlider .swiper-slide {
+		width: 18%;
+	}
+
+	.progress-card{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.scrollSlider .swiper-slide{
+		min-width: 190px
+	}
+
+	.payment-row{
+		margin-top: 20px
+	}
+}
+
+@media screen and (min-width: 768px){
+	.payment-row:before{
+		background-color: var(--dark);
+		position: absolute;
+		opacity: 0.45;
+		height: 100%;
+		content: "";
+		width: 1px;
+		left: 51%;
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.dataTables_wrapper{
+		margin-top: 0px;
+	}
+	div.dataTables_wrapper div.dataTables_info{
+		padding-top: 5px;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 575px){
+	:root{
+		--36 : 30px;
+		--18 : 16px;
+		--16 : 14px;
+		--42 : 32px;
+	}
+
+	.btn-xs{
+		font-size: var(--12)
+	}
+
+	p{
+		margin-bottom: 0.75em;
+	}
+
+	.card-dashboard .card-body p {
+		margin-bottom: 1em
+	}
+
+	label{
+		margin-bottom: 2px
+	}
+
+	.useraccess-footer{
+		padding: 8px
+	}
+
+	.navbar-brand img {
+		max-width: 125px;
+	}
+}

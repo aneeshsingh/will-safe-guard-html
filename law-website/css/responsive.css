@@ -1,0 +1,114 @@
+@media screen and (max-width: 1199px){
+    :root{
+        --150 : 90px;
+        --16 : 15px;
+        --18 : 16px;
+        --20 : 18px;
+        --22 : 20px;
+        --24 : 22px;
+        --36 : 28px;
+        --42 : 36px;
+    }
+	.navbar-brand img{
+        max-width: 165px;
+    }
+    .navbar-nav a.nav-link {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .header-top{
+        padding-right: 0;
+    }
+    .social{
+        font-size: var(--18);
+    }
+    .review-card{
+        padding: 35px 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse{
+        background-color: var(--white);
+        position: absolute;
+        padding: 5px 15px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+    .footer{
+        font-size: var(--12);
+    }
+    .footer h4{
+        font-size: var(--16);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root{
+        --150 : 65px;
+        --16 : 12px;
+        --18 : 16px;
+        --24 : 20px;
+        --36 : 28px;
+        --42 : 32px;
+    }
+    h1{
+        margin-bottom: 20px;    
+    }
+    p{
+        margin-bottom: 15px;
+    }
+    .navbar-brand img {
+        max-width: 143px;
+    }
+    .btn{
+        padding: 6px 15px;
+    }
+    .navbar-nav a.nav-link{
+        padding: 5px !important;
+    }
+    .review-card{
+        padding: 25px 15px;
+    }
+    .footer h4{
+        font-size: var(--22);
+    }
+    .copyright{
+        padding-top: 15px;
+        font-size: var(--12);
+        padding-bottom: 15px;
+    }
+    .service-card p {
+        min-height: auto;
+    }
+    .page-banner{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .header-phone{
+        font-size: 14px;
+    }
+    .team-member h5{
+        font-size: 14px;
+    }
+    .address{
+        height: 150px;
+    }
+    .address p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 340px) {
+    :root{
+        --150 : 50px;
+        --36 : 22px;
+        --42 : 26px;
+    }
+    .navbar-brand img {
+        max-width: 110px;
+    }
+    .btn{
+        font-size: var(--14);
+    }
+}

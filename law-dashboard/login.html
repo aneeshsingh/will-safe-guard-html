@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>RJ Thomas Solicitor | Webapp</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/rj-logo.png" alt="logo" /></a>
+        </div>
+      </nav>
+
+      <div class="useraccess">
+        <div class="row gx-0">
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="useraccess-login">
+              <div class="pb-lg-2 pb-1">
+                <h1>Welcome Back</h1>
+                <p>Welcome back to Solicitorsmanly!</p>
+              </div>
+
+              <form class="my-3" action="/">
+                  <div class="mb-md-3 mb-2">
+                    <label>Email</label>
+                    <input type="email" class="form-control" />
+                  </div>
+                  <div class="mb-md-3 mb-2">
+                    <label>Password</label>
+                    <div class="input-group input-group-pawword">
+                      <input type="password" class="form-control" aria-describedby="button-addon2">
+                      <button class="btn btn-reset" type="button" id="button-addon2">
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-eye-slash" style="display: none;"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mb-md-3 mb-2 d-flex align-items-center flex-wrap justify-content-between">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+
+                    <a href="#" class="btn-link">Forgot password</a>
+                  </div>
+                  <button class="btn btn-md btn-blue">Login <i class="fa-solid ms-2 fa-arrow-right"></i></button>
+              </form>
+            </div>
+
+            <div class="useraccess-footer">Don’t have an account yet? <a href="#" class="btn-link"><em>Signup</em></a></div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="images/login-image.jpg" class="useraccess-image" alt="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="chat"><img src="images/chat.png" alt="chat" /></a>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

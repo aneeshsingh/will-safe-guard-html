@@ -28,8 +28,19 @@
     <div id="wrapper">
       <nav class="navbar navbar-bg navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../images/rj-logo.png" alt="logo" /></a>
-          <a href="#" class="navbar-user ms-auto order-lg-2">J</a>
+          <a class="navbar-brand" href="#"><img src="images/rj-logo.png" alt="logo" /></a>
+          <div class="ms-auto d-flex align-items-center order-lg-2">
+            <div class="dropdown">
+              <button class="navbar-user border-0 p-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                j
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Membership</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
           <button class="navbar-toggler p-0 ms-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,7 +91,7 @@
                   <div class="progress-card my-2">
                     <div class="card-count"><i class="fa-solid fa-check"></i></div>
                     <h4 class="h4 mb-3">About Yourself</h4>
-                    <a href="#" class="btn-link">Edit</a>
+                    <a href="#subscriptionModal" data-bs-toggle="modal" data-bs-target="#subscriptionModal" class="btn-link">Edit</a>
                     <p class="text-muted"><strong class="h6 mb-0 d-block">John Doe</strong><small>Camelia Daniels</small></p>
                   </div>
                 </div>
@@ -130,6 +141,26 @@
           </div>
         </div>
       </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-5 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#29b1c6" class="mb-1" viewBox="0 0 16 16">
+                <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
+              </svg>
+
+              <h4 class="py-3 mb-3">Please subscribe our <br /><span class="h3 mt-2 d-block">Monthly Storage Services!</span></h4>
+              <a href="#" class="btn btn-md btn-blue">Active it <i class="fa-solid ms-2 fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <a href="#" class="chat"><img src="../images/chat.png" alt="chat" /></a>

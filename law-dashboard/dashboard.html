@@ -29,11 +29,16 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/rj-logo.png" alt="logo" /></a>
           <div class="ms-auto d-flex align-items-center order-lg-2">
-            <a href="#" class="navbar-logout">
-              Logout
-            </a>
-            <div class="navbar-seperator mx-md-3 mx-2"></div>
-            <a href="#" class="navbar-user">J</a>
+            <div class="dropdown">
+              <button class="navbar-user border-0 p-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                j
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Membership</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
           </div>
           <button class="navbar-toggler p-0 ms-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

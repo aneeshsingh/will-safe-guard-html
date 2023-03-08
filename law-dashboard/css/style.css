@@ -331,12 +331,13 @@ label{
 
 .navbar-user{
 	background: rgba(41, 177, 198, 0.6);
-	line-height: var(--18) + 8 *px;
+	/* line-height: var(--18) + 8 *px; */
 	color: var(--white) !important;
+	text-transform: uppercase;
 	font-size: var(--18);
 	border-radius: 42px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 42px;
 	font-weight: 500;
 	height: 42px;
 	width: 42px;
@@ -1061,4 +1062,14 @@ label.error{
 }
 input.error{
 	border: 1px solid var(--red);
+}
+
+.dropdown-toggle:after{
+	display: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: var(--blue);
 }

@@ -7,7 +7,7 @@
         --22 : 20px;
         --24 : 22px;
         --36 : 28px;
-        --42 : 36px;
+        --40 : 32px;
     }
 	.navbar-brand img{
         max-width: 165px;
@@ -42,6 +42,9 @@
     .footer h4{
         font-size: var(--16);
     }
+    .landing-banner{
+        padding: 20px 20px 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -51,7 +54,7 @@
         --18 : 16px;
         --24 : 20px;
         --36 : 28px;
-        --42 : 32px;
+        --40 : 30px;
     }
     h1{
         margin-bottom: 20px;    
@@ -98,12 +101,21 @@
     .address p{
         font-size: 14px;
     }
+    .landing-banner{
+        padding: 15px 15px 0;
+    }
+    .lead{
+        font-size: 1.2em;
+    }
+    .count{
+        line-height: 0.8;
+    }
 }
 @media screen and (max-width: 340px) {
     :root{
         --150 : 50px;
         --36 : 22px;
-        --42 : 26px;
+        --40 : 24px;
     }
     .navbar-brand img {
         max-width: 110px;
